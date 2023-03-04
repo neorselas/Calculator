@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newstyle.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <h3>Roen Activities</h3>
+            <h3>Basic Calculator in JavaScript</h3>
+        </div>
+    </nav>
+    
+    <div class="container">
+    <form class="calc" id="calculator">
+        <input type="text" id="calc_field" name="calc_field">
+        
+        <input type="button" id="erase" name="erase" value="C" onclick ="calculator.calc_field.value = ''">
+        <input type="button" id="delete" name="delete" value="Del" onclick ="calculator.calc_field.value = calculator.calc_field.value.slice(0, -1)">
+
+        <input type="button" id="divide" name="divide" value="÷" onclick ="calculator.calc_field.value += '/'">
+        <input type="button" id="one" name="one" value="1" onclick ="calculator.calc_field.value += '1'">
+        <input type="button" id="two" name="two" value="2" onclick ="calculator.calc_field.value += '2'">
+        <input type="button" id="three" name="three" value="3" onclick ="calculator.calc_field.value += 3">
+        <input type="button" id="multiply" name="multiply" value="x" onclick ="calculator.calc_field.value += '*'">
+
+        <input type="button" id="four" name="four" value="4" onclick ="calculator.calc_field.value += 4">
+        <input type="button" id="five" name="five" value="5" onclick ="calculator.calc_field.value += 5">
+        <input type="button" id="six" name="six" value="6" onclick ="calculator.calc_field.value += 6">
+        <input type="button" id="add" name="add" value="+" onclick ="calculator.calc_field.value += '+'">
+        
+        <input type="button" id="seven" name="seven" value="7" onclick ="calculator.calc_field.value += 7">
+        <input type="button" id="eight" name="eight" value="8" onclick ="calculator.calc_field.value += 8">
+        <input type="button" id="nine" name="nine" value="9" onclick ="calculator.calc_field.value += 9">
+        <input type="button" id="minus" name="minus" value="-" onclick ="calculator.calc_field.value += '-'">
+        
+        <!-- <input type="button" id="dot" name="dot" value="." onclick ="calculator.calc_field.value = '.'"> -->
+        <input type="button" id="zero" name="zero" value="0" onclick ="calculator.calc_field.value += 0">
+        <input type="button" id="equal" name="equal" value="=" onclick ="calculator.calc_field.value = eval(calculator.calc_field.value)">
+
+    </form>
+    </div>
+
+    <!-- eval(calculator.calc_field.value); -->
+
+    <script src="calculator.js"></script>
+</body>
+</html>
