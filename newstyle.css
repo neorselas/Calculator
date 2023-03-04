@@ -84,7 +84,10 @@ body {
 }
 
 #equal{
-    grid-column:2/5;
+    grid-column:3/5;
     background-color: rgba(32, 36, 32, 0.699)!important;
     
+}
+#equal:hover{
+    background-color: #ffffff;
 }

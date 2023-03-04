@@ -17,7 +17,7 @@
     
     <div class="container">
     <form class="calc" id="calculator">
-        <input type="text" id="calc_field" name="calc_field">
+        <input type="text" id="calc_field" name="calc_field" placeholder="0">
         
         <input type="button" id="erase" name="erase" value="C" onclick ="calculator.calc_field.value = ''">
         <input type="button" id="delete" name="delete" value="Del" onclick ="calculator.calc_field.value = calculator.calc_field.value.slice(0, -1)">
@@ -38,7 +38,7 @@
         <input type="button" id="nine" name="nine" value="9" onclick ="calculator.calc_field.value += 9">
         <input type="button" id="minus" name="minus" value="-" onclick ="calculator.calc_field.value += '-'">
         
-        <!-- <input type="button" id="dot" name="dot" value="." onclick ="calculator.calc_field.value = '.'"> -->
+        <input type="button" id="dot" name="dot" value="." onclick ="calculator.calc_field.value += '.'">
         <input type="button" id="zero" name="zero" value="0" onclick ="calculator.calc_field.value += 0">
         <input type="button" id="equal" name="equal" value="=" onclick ="calculator.calc_field.value = eval(calculator.calc_field.value)">
 
